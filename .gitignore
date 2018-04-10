@@ -1,0 +1,6 @@
+log/*
+test/*
+tmp/*
+spec/*
+config/database.yml
+.idea/
