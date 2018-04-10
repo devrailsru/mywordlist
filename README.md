@@ -1,1 +1,1 @@
-## [devrails.ru](http://mywordlist.ru/)
+## [mywordlist.ru](http://mywordlist.ru/)
