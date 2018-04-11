@@ -1,0 +1,21 @@
+<%= form_for @word do |f| %>
+
+  <div class="form-control">
+    <%= f.label :title %>
+    <%= f.text_field :title  %>
+  </div>
+
+  <div class="form-control">
+    <%= f.label :translation %>
+    <%= f.text_field :translation  %>
+  </div>
+  <div class="form-control">
+    <%= f.label :example %>
+    <%= f.text_area :example  %>
+  </div>
+
+  <div class="form-control">
+    <%= f.submit 'Сохранить' %>
+  </div>
+
+<% end %>

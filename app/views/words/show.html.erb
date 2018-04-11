@@ -1,0 +1,6 @@
+<h2><%= @word.title %></h2>
+<h2><%= @word.translation %></h2>
+<h2><%= @word.example %></h2>
+<%= link_to 'Редактировать', edit_word_path(@word) %>
+<%= link_to "Удалить", word_path(@word), method: :delete, data: { confirm: "Вы уверены?"}  %>
+<%= link_to 'Назад', root_path %>
