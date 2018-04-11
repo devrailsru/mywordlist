@@ -11,9 +11,19 @@
 
   <body>
 
-    <%= link_to 'Все слова', words_path %>
-    <%= link_to 'Добавить слово', new_word_path %>
 
-    <%= yield %>
-  </body>
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link"><%= link_to 'MyWordList', root_path %></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><%= link_to 'Добавить слово', new_word_path %></a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </body>
+  </div>
 </html>
