@@ -1,21 +1,6 @@
-<%= form_for @word do |f| %>
-
-  <div class="form-control">
-    <%= f.label :title %>
-    <%= f.text_field :title  %>
-  </div>
-
-  <div class="form-control">
-    <%= f.label :translation %>
-    <%= f.text_field :translation  %>
-  </div>
-  <div class="form-control">
-    <%= f.label :example %>
-    <%= f.text_area :example  %>
-  </div>
-
-  <div class="form-control">
-    <%= f.submit 'Сохранить' %>
-  </div>
-
+<%= simple_form_for @word do |f| %>
+  <%= f.input :title %>
+  <%= f.input :translation %>
+  <%= f.input :example %>
+  <%= f.button :submit, 'Добавить', class: "btn btn-success" %>
 <% end %>
