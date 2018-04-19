@@ -2,19 +2,20 @@ source 'https://rubygems.org'
 
 ruby '2.5.1'
 
-gem 'rails',        '5.2.0'
-gem 'pg',           '1.0.0'
-gem 'puma',         '3.11.3'
-gem 'sass-rails',   '5.0.7'
-gem 'uglifier',     '4.1.8'
-gem 'coffee-rails', '4.2.2'
-gem 'jquery-rails', '4.3.1'
-gem 'turbolinks',   '5.1.0'
-gem 'jbuilder',     '2.7.0'
-gem 'bootsnap',     '1.3.0', require: false
-gem 'bootstrap',    '4.0.0'
-gem 'simple_form',  '4.0.0'
-gem 'pg_search',     '2.1.2'
+gem 'rails',                   '5.2.0'
+gem 'pg',                      '1.0.0'
+gem 'puma',                    '3.11.3'
+gem 'sass-rails',              '5.0.7'
+gem 'uglifier',                '4.1.8'
+gem 'coffee-rails',            '4.2.2'
+gem 'jquery-rails',            '4.3.1'
+gem 'turbolinks',              '5.1.0'
+gem 'jbuilder',                '2.7.0'
+gem 'bootsnap',                '1.3.0', require: false
+gem 'bootstrap',               '4.0.0'
+gem 'simple_form',             '4.0.0'
+gem 'pg_search',               '2.1.2'
+gem 'alphabetical_paginate',   '2.3.3'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -28,7 +29,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara', '3.0.1'
+  gem 'capybara',              '3.0.1'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
 end

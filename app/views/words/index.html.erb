@@ -105,12 +105,22 @@
   </li>
 
 </ul>
+
 <div class="tab-content" id="myTabContent">
+
   <div class="tab-pane fade show active" id="a" role="tabpanel" aria-labelledby="a-tab">
-      <% @words.each do |word| %>
-        <p><%= link_to word.title, word_path(word) %> - <%= word.translation %></p>
-      <% end %>
-    </div>
+
+      <%= alphabetical_paginate @alphaParams %>
+      <div id="pagination_table">
+        <% Word.all.each do |word| %>
+          
+        <% end %>
+      </div>
+
+  </div>
+
   <div class="tab-pane fade" id="b" role="tabpanel" aria-labelledby="b-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus officiis dolorum et rerum ducimus modi est, consequatur commodi nam, ratione dolore ullam nulla dolores error beatae voluptas placeat officia adipisci.</div>
+
   <div class="tab-pane fade" id="c" role="tabpanel" aria-labelledby="c-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque facere sint reiciendis illo rerum eveniet, cupiditate, nam labore, dolore saepe, corrupti maxime natus assumenda alias corporis minus modi ab debitis.</div>
+
 </div>
