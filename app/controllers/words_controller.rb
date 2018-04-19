@@ -3,7 +3,7 @@ class WordsController < ApplicationController
   before_action :find_word, only: [:show, :edit, :update, :destroy]
 
   def index
-    @words = Word.all
+    @words, @alphaParams = Word.all.alpha_paginate(params[:letter]){|word| word.title}
   end
 
   def show
