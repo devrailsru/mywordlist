@@ -4,3 +4,5 @@ tmp/*
 spec/*
 config/database.yml
 .idea/
+config/credentials.yml.enc
+config/master.key
