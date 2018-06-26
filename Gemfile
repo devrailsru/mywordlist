@@ -17,6 +17,7 @@ gem 'simple_form',             '4.0.0'
 gem 'pg_search',               '2.1.2'
 gem 'alphabetical_paginate',   '2.3.3'
 gem 'better_errors',           '2.4'
+gem 'devise',                  '4.4.3'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
