@@ -1,19 +1,53 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <%= link_to 'MyWordList', root_path, class: "navbar-brand nav-link text-logo" %>
+<% if user_signed_in? %>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <%= link_to 'MyWordList', root_path, class: "navbar-brand nav-link" %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <form class="form-inline my-2 my-lg-0">
+              <%= form_tag results_path, method: :get, role: 'search' do %>
+                <%= text_field_tag :query, params[:query], class: "form-control mr-sm-2" %>
+                <%= submit_tag "Искать", name: nil, class: "btn btn-outline-success my-2 my-sm-0" %>
+              <% end %>
+            </form>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Добавить", new_word_path,  class: "navbar-brand nav-landing nav-link" %>
+          </li>
+        </ul>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <%= current_user.email %>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <%= link_to t('navigation.account'), edit_user_registration_path, class: "navbar-brand nav-landing dropdown-item" %>
+            <div class="dropdown-divider"></div>
+            <%= link_to t('navigation.logout'), destroy_user_session_path, method: :delete, class: "navbar-brand nav-landing dropdown-item" %>
+          </div>
+        </div>
+    </div>
+  </nav>
+
+<% else %>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-transpert">
+  <%= link_to 'MyWordList', root_path, class: "navbar-brand nav-lin" %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <%= link_to "Добавить", new_word_path,  class: "navbar-brand nav-landing nav-link" %>
+          <%= link_to "Войти", new_user_session_path, class: "navbar-brand nav-landing nav-link" %>
         </li>
-        <form class="form-inline my-2 my-lg-0">
-          <%= form_tag results_path, method: :get, role: 'search' do %>
-            <%= text_field_tag :query, params[:query], class: "form-control mr-sm-2" %>
-            <%= submit_tag "Искать", name: nil, class: "btn btn-outline-success my-2 my-sm-0" %>
-          <% end %>
-        </form>
+        <li class="nav-item">
+          <%= link_to "Зарегистироваться", new_user_registration_path, class: "navbar-brand nav-landing nav-link" %>
+        </li>
       </ul>
   </div>
 </nav>
+
+<% end %>
