@@ -1,4 +1,4 @@
-
+<br>  
 <nav class="nav nav-pills nav-fill">
   <a class="nav-item nav-link active" href="./?letter=a">A</a>
   <a class="nav-item nav-link" href="./?letter=b">B</a>
@@ -28,6 +28,7 @@
   <a class="nav-item nav-link disabled" href="./?letter=z">Z</a>
 </nav>
 
+<br>
 
 <% @words.each do |word| %>
     <p><%= link_to word.title, word_path(word) %> - <%= word.translation %></p>
