@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to 'MyWordList', root_path, class: "navbar-brand nav-link text-logo" %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to "Добавить", new_word_path,  class: "navbar-brand nav-landing nav-link" %>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+          <%= form_tag results_path, method: :get, role: 'search' do %>
+            <%= text_field_tag :query, params[:query], class: "form-control mr-sm-2" %>
+            <%= submit_tag "Искать", name: nil, class: "btn btn-outline-success my-2 my-sm-0" %>
+          <% end %>
+        </form>
+      </ul>
+  </div>
+</nav>
