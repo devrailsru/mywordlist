@@ -11,23 +11,25 @@
 
   <body>
 
-      <div class="container all-text">
+
+    <div class="container all-text">
+
 
       <%= render "layouts/navigation" %>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
 
-          <p class="notice"><%= notice %></p>
-          <p class="alert"><%= alert %></p>
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
 
-          <%= yield %>
+            <%= yield %>
+          </div>
         </div>
-      </div>
-    </div
+      </div
 
-    </div>
+      </div>
 
   </body>
 </html>
