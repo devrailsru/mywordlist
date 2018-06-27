@@ -50,3 +50,11 @@
    font-size: 2.5em;
 
  }
+
+ @media (max-width:768px) {
+   .jumbotron {
+
+     width: 95%;
+
+   }
+ }
