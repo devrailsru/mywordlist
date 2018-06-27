@@ -11,7 +11,11 @@
 
   <body>
 
-    <div class="container-fluid container-background ">
+    <% if user_signed_in? %>
+      <div class="container-fluid container-login">
+    <% else %>
+      <div class="container-fluid container-background">
+    <% end %>
 
       <div class="container all-text">
 
@@ -24,7 +28,7 @@
             <p class="alert"><%= alert %></p>
 
             <%= yield %>
-            
+
           </div>
         </div>
       </div>
