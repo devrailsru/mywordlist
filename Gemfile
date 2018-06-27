@@ -12,7 +12,7 @@ gem 'jquery-rails',            '4.3.1'
 gem 'turbolinks',              '5.1.0'
 gem 'jbuilder',                '2.7.0'
 gem 'bootsnap',                '1.3.0', require: false
-gem 'bootstrap',               '4.0.0'
+gem 'bootstrap',               '4.1.1'
 gem 'simple_form',             '4.0.0'
 gem 'pg_search',               '2.1.2'
 gem 'alphabetical_paginate',   '2.3.3'
