@@ -9,24 +9,39 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
  */
-@import "bootstrap";
 
-@import url('https://fonts.googleapis.com/css?family=Neucha');
+ @import "bootstrap";
+ @import url('https://fonts.googleapis.com/css?family=Neucha');
 
+ .text-logo {
+   font-size: 2.5em;
+ }
 
-.text-logo {
-  font-size: 2.5em;
+ .all-text {
+   font-family: 'Neucha', cursive;
+   font-size: 1.1em;
+ }
+
+ .container-background {
+   width: 100%;
+   min-height: 100vh;
+   background-size: cover;
+   background-image: url(image_path('background.jpg'));
+ }
+
+ .container-login {
+  padding-right: 0;
+  padding-left: 0;
 }
 
-.all-text {
-  font-family: 'Neucha', cursive;
-  font-size: 1.1em;
-}
+ .jumbotron {
+   background-color: rgba(255,255,255,0.6);
+ }
 
-.container-background {
-  width: 100%;
-  min-height: 100vh;
-  background-size: cover;
-  background-image: url(image_path('background.jpg'));
-}
+ .display-4 {
+   font-size: 2.5em;
+ }
