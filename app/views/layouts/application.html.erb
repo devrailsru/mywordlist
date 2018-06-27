@@ -11,12 +11,11 @@
 
   <body>
 
+    <div class="container-fluid container-background ">
 
-    <div class="container all-text">
-
+      <div class="container all-text">
 
       <%= render "layouts/navigation" %>
-
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -25,11 +24,13 @@
             <p class="alert"><%= alert %></p>
 
             <%= yield %>
+            
           </div>
         </div>
-      </div
-
       </div>
+    </div>
+
+  </div>
 
   </body>
 </html>
