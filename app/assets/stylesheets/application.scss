@@ -16,6 +16,8 @@
 
  @import "bootstrap";
  @import url('https://fonts.googleapis.com/css?family=Neucha');
+ $card-cap-bg: rgba(255,255,255,0.5);
+ $card-bg: rgba(255,255,255,0.4);
 
  .text-logo {
    font-size: 2.5em;
@@ -38,6 +40,8 @@
   padding-left: 0;
 }
 
+// jumbotron
+
  .jumbotron {
    background-color: rgba(255,255,255,0.6);
    text-align: center;
@@ -51,10 +55,31 @@
 
  }
 
+/// devise form
+
+ .card {
+   background-color: rgba(255,255,255,0.5);
+ }
+
+ .card-header {
+   background-color: rgba(255,255,255,0.6);
+ }
+
+ .devise-form {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// For mobile
+
  @media (max-width:768px) {
    .jumbotron {
-
-     width: 95%;
-
+     width: 100%;
    }
+   .devise-form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
  }
