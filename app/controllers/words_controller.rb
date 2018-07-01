@@ -1,5 +1,6 @@
 class WordsController < ApplicationController
 
+  before_action :authenticate_user!
   before_action :find_word, only: [:show, :edit, :update, :destroy]
 
   def index
