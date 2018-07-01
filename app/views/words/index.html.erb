@@ -1,36 +1,34 @@
-<br>
 <nav class="nav nav-pills nav-fill">
-  <a class="nav-item nav-link active" href="./?letter=a">A</a>
-  <a class="nav-item nav-link" href="./?letter=b">B</a>
-  <a class="nav-item nav-link" href="./?letter=c">C</a>
-  <a class="nav-item nav-link" href="./?letter=d">D</a>
-  <a class="nav-item nav-link" href="./?letter=e">E</a>
-  <a class="nav-item nav-link" href="./?letter=f">F</a>
-  <a class="nav-item nav-link" href="./?letter=g">G</a>
-  <a class="nav-item nav-link" href="./?letter=h">H</a>
-  <a class="nav-item nav-link" href="./?letter=i">I</a>
-  <a class="nav-item nav-link" href="./?letter=j">J</a>
-  <a class="nav-item nav-link" href="./?letter=k">K</a>
-  <a class="nav-item nav-link" href="./?letter=l">L</a>
-  <a class="nav-item nav-link" href="./?letter=m">M</a>
-  <a class="nav-item nav-link" href="./?letter=n">N</a>
-  <a class="nav-item nav-link" href="./?letter=o">O</a>
-  <a class="nav-item nav-link" href="./?letter=p">P</a>
-  <a class="nav-item nav-link" href="./?letter=q">Q</a>
-  <a class="nav-item nav-link" href="./?letter=r">R</a>
-  <a class="nav-item nav-link" href="./?letter=s">S</a>
-  <a class="nav-item nav-link" href="./?letter=t">T</a>
-  <a class="nav-item nav-link" href="./?letter=u">U</a>
-  <a class="nav-item nav-link" href="./?letter=v">V</a>
-  <a class="nav-item nav-link" href="./?letter=w">W</a>
-  <a class="nav-item nav-link" href="./?letter=x">X</a>
-  <a class="nav-item nav-link" href="./?letter=y">Y</a>
-  <a class="nav-item nav-link" href="./?letter=z">Z</a>
+  <a class="nav-item nav-link" href="?letter=A">A</a>
+  <a class="nav-item nav-link" href="?letter=B">B</a>
+  <a class="nav-item nav-link" href="?letter=C">C</a>
+  <a class="nav-item nav-link" href="?letter=D">D</a>
+  <a class="nav-item nav-link" href="?letter=E">E</a>
+  <a class="nav-item nav-link" href="?letter=f">F</a>
+  <a class="nav-item nav-link" href="?letter=G">G</a>
+  <a class="nav-item nav-link" href="?letter=H">H</a>
+  <a class="nav-item nav-link" href="?letter=I">I</a>
+  <a class="nav-item nav-link" href="?letter=J">J</a>
+  <a class="nav-item nav-link" href="?letter=K">K</a>
+  <a class="nav-item nav-link" href="?letter=L">L</a>
+  <a class="nav-item nav-link" href="?letter=M">M</a>
+  <a class="nav-item nav-link" href="?letter=N">N</a>
+  <a class="nav-item nav-link" href="?letter=O">O</a>
+  <a class="nav-item nav-link" href="?letter=P">P</a>
+  <a class="nav-item nav-link" href="?letter=Q">Q</a>
+  <a class="nav-item nav-link" href="?letter=R">R</a>
+  <a class="nav-item nav-link" href="?letter=S">S</a>
+  <a class="nav-item nav-link" href="?letter=T">T</a>
+  <a class="nav-item nav-link" href="?letter=U">U</a>
+  <a class="nav-item nav-link" href="?letter=V">V</a>
+  <a class="nav-item nav-link" href="?letter=W">W</a>
+  <a class="nav-item nav-link" href="?letter=X">X</a>
+  <a class="nav-item nav-link" href="?letter=Y">Y</a>
+  <a class="nav-item nav-link" href="?letter=Z">Z</a>
 </nav>
 
 <br>
 
-<% @words.each do |word| %>
+<% @words.each do |word|%>
     <p><%= link_to word.title, word_path(word) %> - <%= word.translation %></p>
-  <% end %>
-</div>
+<% end %>
