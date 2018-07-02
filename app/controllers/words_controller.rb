@@ -5,7 +5,6 @@ class WordsController < ApplicationController
 
   def index
     @words, @alphaParams = current_user.words.all.alpha_paginate(params[:letter]){|word| word.title}
-    @word = current_user.words.build
   end
 
   def show
