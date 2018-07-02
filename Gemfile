@@ -19,6 +19,7 @@ gem 'alphabetical_paginate',   '2.3.3'
 gem 'better_errors',           '2.4'
 gem 'devise',                  '4.4.3'
 
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -28,6 +29,7 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
+  gem 'letter_opener',           '1.6'
 end
 
 group :test do
