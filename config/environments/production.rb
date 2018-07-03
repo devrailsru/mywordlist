@@ -90,8 +90,8 @@ Rails.application.configure do
   address:              'smtp.gmail.com',
   port:                 587,
   domain:               'mywordlistru.herokuapp.com',
-  user_name:            Rails.application.credentials.development[:aws][:user_name],
-  password:             Rails.application.credentials.development[:aws][:password],
+  user_name:            Rails.application.credentials.production[:aws][:user_name],
+  password:             Rails.application.credentials.producrion[:aws][:password],
   authentication:       'plain',
   enable_starttls_auto: true }
 
