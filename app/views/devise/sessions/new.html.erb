@@ -10,7 +10,7 @@
       <div class="form-group">
         <%= f.input :email, label: 'Электронная почта:', placeholder: 'user@domain.com', required: true, autofocus: true, class: "form-control" %>
         <%= f.input :password, label: 'Пароль:', placeholder: '******', required: true, class: "form-control" %>
-        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+        <%= f.input :remember_me, label: 'Запомнить меня', as: :boolean if devise_mapping.rememberable? %>
       </div>
 
       <div class="form-actions">
