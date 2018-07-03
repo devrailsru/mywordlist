@@ -84,14 +84,14 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
   # For Devise gem
-  config.action_mailer.default_url_options = { host: 'mywordlistru.herokuapp.com/'}
+  config.action_mailer.default_url_options = { host: 'mywordlistru.herokuapp.com'}
   config.action_mailer.delivery_method = :smpt
   config.action_mailer.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
   domain:               'mywordlistru.herokuapp.com',
   user_name:            Rails.application.credentials.production[:aws][:user_name],
-  password:             Rails.application.credentials.producrion[:aws][:password],
+  password:             Rails.application.credentials.production[:aws][:password],
   authentication:       'plain',
   enable_starttls_auto: true }
 
