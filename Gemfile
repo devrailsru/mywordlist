@@ -29,7 +29,14 @@ group :development do
   gem 'listen',                '3.1.5'
   gem 'spring',                '2.0.2'
   gem 'spring-watcher-listen', '2.0.1'
-  gem 'letter_opener',           '1.6'
+  gem 'letter_opener',         '1.6'
+  gem 'capistrano',            '3.11'
+  gem 'capistrano-rails',      '1.4'
+  gem 'capistrano-passenger',  '0.2.0'
+  gem 'capistrano-rbenv',      '2.1.3'
+end
+
+group :development do
 end
 
 group :test do
