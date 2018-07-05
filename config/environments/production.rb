@@ -80,16 +80,16 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Use a different logger for distributed setups.
-  # require 'syslog/logger'
+  # require 'syslog/logger'feedback_info_controller.rb
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
   # For Devise gem
   config.action_mailer.default_url_options = { host: 'mywordlistru.herokuapp.com'}
-  # config.action_mailer.perform_deliveries = true
+  config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
   tls: true,
-  address: "smtp.yandex.com",
+  address: 'smtp.yandex.com',
   port: 465,
   domain:               'yandex.com',
   user_name:            Rails.application.credentials.production[:aws][:user_name],
