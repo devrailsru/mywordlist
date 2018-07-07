@@ -4,7 +4,7 @@ lock "3.11.0"
 set :application, "mywordlist"
 set :repo_url, "git@github.com:devrailsru/mywordlist.git"
 
-set :deploy_to, '/home/deploy/mywordlist'
+set :deploy_to, '/home/deploy/apps/mywordlist'
 
 append :linked_files, "config/database.yml", "config/credentials.yml.enc"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"

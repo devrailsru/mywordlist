@@ -84,7 +84,7 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
   # For Devise gem
-  config.action_mailer.default_url_options = { host: 'mywordlistru.herokuapp.com'}
+  config.action_mailer.default_url_options = { host: 'mywordlist.ru'}
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
