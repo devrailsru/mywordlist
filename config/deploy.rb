@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:devrailsru/mywordlist.git"
 
 set :deploy_to, '/home/deploy/apps/mywordlist'
 
-append :linked_files, "config/database.yml", "config/credentials.yml.enc"
+append :linked_files, "config/database.yml", "config/credentials.yml.enc", "config/master.key"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 # Default branch is :master
