@@ -17,7 +17,7 @@ class WordsController < ApplicationController
   def create
     @word = current_user.words.build(word_params)
     if @word.save
-     redirect_to @word
+     redirect_to words_path
     else
       render :new
     end
