@@ -84,7 +84,7 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
   # For Devise gem
-  config.action_mailer.default_url_options = { host: 'mywordlist.ru'}
+  config.action_mailer.default_url_options = { host: 'www.mywordlist.ru'}
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -92,10 +92,10 @@ Rails.application.configure do
   address: 'smtp.yandex.com',
   port: 465,
   domain:               'yandex.com',
-  user_name:            Rails.application.credentials.production[:aws][:user_name],
-  password:             Rails.application.credentials.production[:aws][:password],
   authentication:       'plain',
-  enable_starttls_auto: true }
+  enable_starttls_auto: true,
+  user_name:            Rails.application.credentials.production[:aws][:user_name],
+  password:             Rails.application.credentials.production[:aws][:password] }
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
