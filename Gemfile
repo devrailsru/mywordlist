@@ -37,9 +37,6 @@ group :development do
   gem 'capistrano-bundler',    '1.1.4'
 end
 
-group :development do
-end
-
 group :test do
   gem 'capybara',              '3.0.1'
   gem 'selenium-webdriver'
